@@ -1,8 +1,8 @@
-Aula 1 - introdução ao blocos anônimos
+Aula 1 - introduÃ§Ã£o ao blocos anÃ´nimos
 
 1 o comando a ser executado
 
-habilitnado a saída de dados em um bloco pl
+habilitnado a saÃ­da de dados em um bloco pl
 
 set serverout on
 
@@ -36,8 +36,8 @@ end;
 //////////////////////////////////////
 
 declare
--- declaração devm
--- uso de variaveis de substituição
+-- declaraÃ§Ã£o devm
+-- uso de variaveis de substituiÃ§Ã£o
     v1 number(2) := &Valor_1;
     v2 number(2) := &Valor_2;
 -- processamento
@@ -71,8 +71,21 @@ begin
     dbms_output.put_line('resultado: '||re);
 end;
 
-03--
+04--
 
+declare
+    v1 number := &Valor_1;
+    v2 number := 0.03;
+    v3 number := 10;
+    
+    re1 number := v1 * v2;
+    re2 number := re * 10;
+    re3 number := re2 /10;
+begin
+    dbms_output.put_line('resultado: '||re);
+end;
+
+03--
 declare
     v1 number := &Valor_1;
     v2 number := 4.90;
@@ -81,8 +94,7 @@ begin
     dbms_output.put_line('resultado: '||re);
 end;
 
-04
-
+05--
 
 
 
