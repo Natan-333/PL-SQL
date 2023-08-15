@@ -85,6 +85,8 @@ begin
     dbms_output.put_line('resultado: '||re);
 end;
 
+--set verify off= para a repetição--
+
 03--
 declare
     v1 number := &Valor_1;
@@ -95,6 +97,55 @@ begin
 end;
 
 05--
+v_carro  NUMBER(10,2) :=10 *0.2;
+v_presta v_carro%type;
+begin
+    v-pretsa:=(v-carro *1.1)/6;
+    dbms_outup.put_line('valor de prestação em 6x:'||v_presta);
+    v_presta :=(v_carro * 1.15)/12;
+    dbms_outup.put_line('valor de prestação em 12x:'||v_presta);
+    v_presta :=(v_carro * 1.15)/18;
+    dbms_outup.put_line('valor de prestação em 18x:'||v_presta);
+end;
+
+--------------
+
+
+
+Estrutura de decisão
+
+if_mod(sexo masculino
+
+01---
+DECLARE
+--
+      sexo STRING;
+    BEGIN
+    v_sexo = M or F 
+    ;
+    END CASE;
+      EXCEPTION
+        WHEN sexo ≠ M or F THEN
+          DBMS_OUTPUT.PUT_LINE('Outro');
+    END;
+   /
+   
+ 02---
+ 
+ v_carro  NUMBER(10,2) :=10 *0.2;
+v_presta v_carro%type;
+
+DECLARE
+begin
+    IF v-pretsa:=(v-carro *1.1)/6;
+    dbms_outup.put_line('valor de prestação em 6x:'||v_presta);
+    Else if v_presta :=(v_carro * 1.15)/12;
+    dbms_outup.put_line('valor de prestação em 12x:'||v_presta);
+    ELSE IF v_presta :=(v_carro * 1.15)/18;
+    dbms_outup.put_line('valor de prestação em 18x:'||v_presta);
+    ELSE
+    dbms_outup.put_line('FINACIAMNETO SEM OFERTA '||v_presta);
+end;
 
 
 
